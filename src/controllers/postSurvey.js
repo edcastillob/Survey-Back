@@ -1,7 +1,7 @@
 const { Datos } = require("../db");
 
 async function postSurvey(req, res){   
-    console.log(req.body)
+    // console.log(req.body)
 
     try {
         const { 

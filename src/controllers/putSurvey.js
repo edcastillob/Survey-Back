@@ -3,8 +3,8 @@ const { Datos } = require("../db");
 async function putSurvey(req, res) {
     const surveyID = req.params.id;
     const newData = req.body;
-    console.log('_:   ', surveyID)
-    console.log('_:   ', newData)
+    // console.log('_:   ', surveyID)
+    // console.log('_:   ', newData)
     try {
         const survey = await Datos.findOne({
             where: { id: surveyID }

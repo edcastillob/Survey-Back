@@ -4,6 +4,7 @@ const { getSurvey } = require("../controllers/getSurvey");
 const { putSurvey } = require("../controllers/putSurvey");
 const { getSurveyId } = require("../controllers/getSurveyId");
 const { deleteSurvey } = require("../controllers/deleteSurvey");
+const { getSurveyOrder } = require("../controllers/getSurveyOrder");
 
 const router = Router();
 
@@ -17,6 +18,7 @@ router.get('/', function(req, res) {
   router.put("/survey/:id", putSurvey);
   router.get("/survey/:id", getSurveyId);
   router.delete("/survey/:id", deleteSurvey);
+  router.get("/surveycontact/:id", getSurveyOrder)
 
 
 
